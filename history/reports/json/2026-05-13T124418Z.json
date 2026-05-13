@@ -1,0 +1,202 @@
+{
+  "run_id": "2026-05-13T124418Z",
+  "run_date": "2026-05-13",
+  "repository": "alex-one-v/qa-agent",
+  "summary": {
+    "pages_reviewed": 14,
+    "new_issues": 5,
+    "recurring_issues": 0,
+    "resolved_issues": 0,
+    "regressions": 0,
+    "needs_human_verification": 1
+  },
+  "pages_reviewed": [
+    {
+      "page_id": "home",
+      "url": "https://www.nice.com",
+      "page_title": "NiCE: AI Customer Service Automation Solutions",
+      "issue_count": 1,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "contact-us",
+      "url": "https://www.nice.com/contact-us",
+      "page_title": "Contact NiCE Sales, Support & Global Offices | NiCE",
+      "issue_count": 1,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "global-leadership",
+      "url": "https://www.nice.com/company/global-leadership",
+      "page_title": "Global Leadership | NiCE",
+      "issue_count": 0,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "media-center",
+      "url": "https://www.nice.com/company/media-center",
+      "page_title": "NiCE media center | NiCE",
+      "issue_count": 0,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "press-releases",
+      "url": "https://www.nice.com/press-releases",
+      "page_title": "Press Releases | NiCE",
+      "issue_count": 0,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "investors",
+      "url": "https://www.nice.com/company/investors",
+      "page_title": "NiCE: Investor Relations",
+      "issue_count": 0,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "about-us",
+      "url": "https://www.nice.com/company/about-us",
+      "page_title": "About NiCE",
+      "issue_count": 0,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "resources",
+      "url": "https://www.nice.com/resources",
+      "page_title": "Call Center Resource Finder | NiCE",
+      "issue_count": 1,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "blog",
+      "url": "https://www.nice.com/blog",
+      "page_title": "Customer Experience Blog | NiCE",
+      "issue_count": 1,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "trust-center",
+      "url": "https://www.nice.com/company/trust-center",
+      "page_title": "NiCE Trust Center | NiCE",
+      "issue_count": 0,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "integrations",
+      "url": "https://www.nice.com/platform/integrations",
+      "page_title": "AI Platform Integrations for Customer Experience | NiCE",
+      "issue_count": 0,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "omnichannel-routing",
+      "url": "https://www.nice.com/products/omnichannel-routing",
+      "page_title": "AI Omnichannel Routing | NiCE",
+      "issue_count": 1,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "products",
+      "url": "https://www.nice.com/products",
+      "page_title": "AI Customer Experience Solutions | NiCE",
+      "issue_count": 0,
+      "review_status": "reviewed"
+    },
+    {
+      "page_id": "nice-world",
+      "url": "https://www.nice.com/websites/nice-world",
+      "page_title": "NiCE World 2026 | CX & AI Conference in Orlando, FL",
+      "issue_count": 0,
+      "review_status": "reviewed"
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "home-cq-001-investor-relations-nav-copy",
+      "prior_issue_id": null,
+      "url": "https://www.nice.com",
+      "page_id": "home",
+      "rule_id": "CQ-001",
+      "category": "content",
+      "severity": "medium",
+      "evidence_state": "confirmed_issue",
+      "comparison_status": "new_issue",
+      "title": "Company navigation says \"Investors relations\"",
+      "summary": "The Company navigation label reads \"Investors Investors relations, reports and filings,\" which contains a grammar/copy error in a shared navigation element.",
+      "affected_element": "Company mega-menu > Investors link",
+      "recommended_action": "Change the shared label to \"Investor Relations\" and verify the correction across pages that reuse the same navigation component.",
+      "confidence": "high"
+    },
+    {
+      "issue_id": "contact-us-cl-002-primary-form-not-observable",
+      "prior_issue_id": null,
+      "url": "https://www.nice.com/contact-us",
+      "page_id": "contact-us",
+      "rule_id": "CL-002",
+      "category": "cta_link",
+      "severity": "high",
+      "evidence_state": "needs_human_verification",
+      "comparison_status": "new_issue",
+      "title": "Primary contact form was not observable in accessible text capture",
+      "summary": "The page asks visitors to \"Tell us a bit about your goals,\" but the review could not observe any form fields, field labels, or submit control in the page capture, so the main conversion form may be hidden, embedded without accessible text, or failing to load.",
+      "affected_element": "Primary lead capture form",
+      "recommended_action": "Manually verify that the form renders reliably, exposes labeled inputs and a submit action, and remains usable for keyboard and assistive-tech users.",
+      "confidence": "low"
+    },
+    {
+      "issue_id": "resources-cl-003-generic-see-more-cta",
+      "prior_issue_id": null,
+      "url": "https://www.nice.com/resources",
+      "page_id": "resources",
+      "rule_id": "CL-003",
+      "category": "cta_link",
+      "severity": "medium",
+      "evidence_state": "likely_issue",
+      "comparison_status": "new_issue",
+      "title": "Featured resource cards rely on generic \"See more\" CTAs",
+      "summary": "Multiple promoted resources use the same vague CTA text (\"See more\"), which weakens scanability and makes it harder to predict the destination type before clicking.",
+      "affected_element": "Featured resource card CTAs",
+      "recommended_action": "Use destination-specific CTA copy such as \"Read the report,\" \"Watch the webinar,\" or \"Open guide.\"",
+      "confidence": "high"
+    },
+    {
+      "issue_id": "blog-ax-001-filter-taxonomy-collapsed-text",
+      "prior_issue_id": null,
+      "url": "https://www.nice.com/blog",
+      "page_id": "blog",
+      "rule_id": "AX-001",
+      "category": "accessibility",
+      "severity": "medium",
+      "evidence_state": "likely_issue",
+      "comparison_status": "new_issue",
+      "title": "Blog filter taxonomy reads as one collapsed string",
+      "summary": "The year and topic filters are exposed as a long run-on string (for example \"2009#NiCETalks ...\"), which likely hurts readability and linearized navigation for assistive technology.",
+      "affected_element": "Blog filter controls",
+      "recommended_action": "Ensure each filter option has clear visible separation and an accessible label when the control set is read linearly.",
+      "confidence": "medium"
+    },
+    {
+      "issue_id": "omnichannel-routing-cq-001-preferrable-typo",
+      "prior_issue_id": null,
+      "url": "https://www.nice.com/products/omnichannel-routing",
+      "page_id": "omnichannel-routing",
+      "rule_id": "CQ-001",
+      "category": "content",
+      "severity": "medium",
+      "evidence_state": "confirmed_issue",
+      "comparison_status": "new_issue",
+      "title": "Hero copy misspells \"preferable\" as \"preferrable\"",
+      "summary": "The product hero reads \"Personal, preferrable, AI-powered connections,\" which contains a spelling error in a prominent conversion area.",
+      "affected_element": "Hero subheadline",
+      "recommended_action": "Correct the word to \"preferable\" and recheck the hero copy on desktop and mobile.",
+      "confidence": "high"
+    }
+  ],
+  "suppressed_findings": [],
+  "run_warnings": [
+    "The live repository default branch did not contain the expected config, rules, template, or report-history files. This run used the attached agent_files/repo-starter scaffold as fallback input and wrote the new outputs back to the live repository.",
+    "No prior JSON or Markdown reports were available in the live repository, so active findings were classified as new_issue and resolved or regressed comparisons could not be computed from repository history.",
+    "Website inspection used browser-side page capture. Terminal-side network requests to the site were unavailable in this environment, so performance, rendering, and form-loading concerns were only reported when visible or downgraded to needs_human_verification."
+  ],
+  "write_status": "written_to_repository_with_fallback_inputs"
+}
