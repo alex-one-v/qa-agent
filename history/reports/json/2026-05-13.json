@@ -1,0 +1,143 @@
+{
+  "run_id": "website-qa-2026-05-13",
+  "run_date": "2026-05-13",
+  "generated_at_utc": "2026-05-13T12:30:59Z",
+  "timezone": "Asia/Tbilisi",
+  "repository": {
+    "full_name": "alex-one-v/qa-agent",
+    "default_branch": "main",
+    "reachable": true,
+    "writable": true,
+    "initialized": true,
+    "size_at_run_start": 0,
+    "live_inputs_present": false,
+    "live_input_gap": "The live repository was empty at run start, so the attached repo-starter scaffold was used for URLs, rules, templates, and empty feedback history."
+  },
+  "input_sources": {
+    "url_inventory": "agent_files/repo-starter/config/urls.yaml",
+    "qa_rules": "agent_files/repo-starter/rules/qa-rules.yaml",
+    "severity_model": "agent_files/repo-starter/rules/severity-model.yaml",
+    "report_template": "agent_files/repo-starter/templates/daily-report-template.md",
+    "slack_template": "agent_files/repo-starter/templates/slack-summary-template.md"
+  },
+  "summary": {
+    "pages_reviewed": 14,
+    "new_issues": 6,
+    "recurring_issues": 0,
+    "resolved_issues": 0,
+    "regressions": 0,
+    "needs_human_verification": 1,
+    "confirmed_issues": 2,
+    "likely_issues": 3,
+    "suppressed_false_positives": 0,
+    "severity_counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 5,
+      "low": 1,
+      "info": 0
+    }
+  },
+  "warnings": [
+    "Live GitHub repository content was missing at run start; attached repo-starter files were used as the grounded reference for this run.",
+    "Review evidence was limited to the text and structure available through the browsing tools. No screenshot-based visual QA or lab-style performance diagnostics were executed.",
+    "Because no live historical reports existed, all active findings are classified as new_issue by default."
+  ],
+  "findings": [
+    {
+      "issue_id": "qa-2026-05-13-omnichannel-preferrable",
+      "page_id": "omnichannel-routing",
+      "url": "https://www.nice.com/products/omnichannel-routing",
+      "rule_id": "CQ-001",
+      "category": "content",
+      "severity": "medium",
+      "evidence_state": "confirmed_issue",
+      "comparison_status": "new_issue",
+      "confidence": "high",
+      "title": "Hero headline misspells \"preferable\" as \"preferrable\"",
+      "evidence": "The hero line reads \"Personal, preferrable, AI-powered connections.\"",
+      "source_reference": "turn4view5:274-277",
+      "recommended_action": "Correct the headline copy to \"preferable\"."
+    },
+    {
+      "issue_id": "qa-2026-05-13-press-release-view-suffix",
+      "page_id": "press-releases",
+      "url": "https://www.nice.com/press-releases",
+      "rule_id": "CQ-001",
+      "category": "content",
+      "severity": "medium",
+      "evidence_state": "confirmed_issue",
+      "comparison_status": "new_issue",
+      "confidence": "high",
+      "title": "Press release cards append stray \"view\" text to headlines",
+      "evidence": "Multiple listing titles end with an extra trailing word, for example \"...Agentic Automation view.\"",
+      "source_reference": "turn7view2:293-318",
+      "recommended_action": "Separate headline text from the card CTA label."
+    },
+    {
+      "issue_id": "qa-2026-05-13-resources-generic-cta",
+      "page_id": "resources",
+      "url": "https://www.nice.com/resources",
+      "rule_id": "CL-003",
+      "category": "cta_link",
+      "severity": "medium",
+      "evidence_state": "likely_issue",
+      "comparison_status": "new_issue",
+      "confidence": "medium",
+      "title": "Repeated \"See more\" CTAs are too generic on featured resource cards",
+      "evidence": "Featured resources repeat the same non-specific CTA label, \"See more.\"",
+      "source_reference": "turn4view0:287-302",
+      "recommended_action": "Use destination-specific CTA labels such as \"Download report\" or \"View resource.\""
+    },
+    {
+      "issue_id": "qa-2026-05-13-contact-empty-heading",
+      "page_id": "contact-us",
+      "url": "https://www.nice.com/contact-us",
+      "rule_id": "AX-001",
+      "category": "accessibility",
+      "severity": "medium",
+      "evidence_state": "likely_issue",
+      "comparison_status": "new_issue",
+      "confidence": "medium",
+      "title": "An empty heading appears in the contact page body",
+      "evidence": "The extracted structure includes a standalone empty heading marker before the next content block.",
+      "source_reference": "turn7view0:292-298",
+      "recommended_action": "Inspect the heading markup and remove or populate the empty heading."
+    },
+    {
+      "issue_id": "qa-2026-05-13-nice-world-unlabeled-sponsor-links",
+      "page_id": "nice-world",
+      "url": "https://www.nice.com/websites/nice-world",
+      "rule_id": "AX-001",
+      "category": "accessibility",
+      "severity": "medium",
+      "evidence_state": "likely_issue",
+      "comparison_status": "new_issue",
+      "confidence": "medium",
+      "title": "Sponsor logo links appear to have no accessible text labels",
+      "evidence": "The sponsor section exposes multiple outbound links with no readable link text in the extracted content.",
+      "source_reference": "turn7view4:495-514",
+      "recommended_action": "Give each sponsor logo link an accessible name through alt text or aria-label."
+    },
+    {
+      "issue_id": "qa-2026-05-13-blog-filter-readability",
+      "page_id": "blog",
+      "url": "https://www.nice.com/blog",
+      "rule_id": "VQ-003",
+      "category": "visual",
+      "severity": "low",
+      "evidence_state": "needs_human_verification",
+      "comparison_status": "new_issue",
+      "confidence": "low",
+      "title": "Blog filter controls may be collapsing into an unreadable text block",
+      "evidence": "The filter list appears as one long string, including \"2009#NiCETalks,\" in the extracted page text.",
+      "source_reference": "turn4view1:274-279",
+      "recommended_action": "Verify the filter controls in a full browser session."
+    }
+  ],
+  "write_targets": {
+    "json_report": "history/reports/json/2026-05-13.json",
+    "markdown_report": "history/reports/markdown/2026-05-13.md",
+    "run_log": "history/logs/2026-05-13.log"
+  }
+}
