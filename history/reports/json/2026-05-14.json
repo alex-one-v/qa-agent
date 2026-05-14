@@ -172,5 +172,5 @@
     "No prior live reports, approved fixes, rejected findings, reviewer overrides, or known false positives were available from the live repository during this run, so comparison was performed against an empty baseline.",
     "Coverage was partial for visual, interaction, accessibility, and performance checks. Review was limited to text/html retrieval of the scheduled pages, without full browser rendering, click-through traversal, or assistive-technology validation."
   ],
-  "write_status": "pending_repository_write"
+  "write_status": "repository_write_success"
 }
