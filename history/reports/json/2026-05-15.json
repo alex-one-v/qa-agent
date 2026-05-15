@@ -1,0 +1,282 @@
+{
+  "run_id": "daily-qa-2026-05-15T120902+04",
+  "run_date": "2026-05-15",
+  "repository": "alex-one-v/qa-agent",
+  "source_inputs": {
+    "live_repository_config_available": false,
+    "live_repository_history_available": true,
+    "fallback_reference_used": "agent_files/repo-starter",
+    "timezone": "Asia/Tbilisi",
+    "scheduled_invoked_at": "2026-05-15 12:09:02 +04",
+    "comparison_reports_used": [
+      "history/reports/json/2026-05-14.json",
+      "history/reports/json/2026-05-13T124418Z.json",
+      "history/reports/json/2026-05-13.json"
+    ]
+  },
+  "summary": {
+    "pages_reviewed": 14,
+    "new_issues": 0,
+    "recurring_issues": 8,
+    "resolved_issues": 0,
+    "regressions": 0,
+    "needs_human_verification": 1,
+    "confirmed_issues": 4,
+    "likely_issues": 3,
+    "severity_counts": {
+      "critical": 0,
+      "high": 2,
+      "medium": 6,
+      "low": 0,
+      "info": 0
+    }
+  },
+  "pages_reviewed": [
+    {
+      "page_id": "home",
+      "url": "https://www.nice.com",
+      "page_title": "NiCE: AI Customer Service Automation Solutions",
+      "status": "reviewed_with_findings",
+      "findings_count": 1
+    },
+    {
+      "page_id": "contact-us",
+      "url": "https://www.nice.com/contact-us",
+      "page_title": "Contact NiCE Sales, Support & Global Offices | NiCE",
+      "status": "reviewed_with_findings",
+      "findings_count": 1
+    },
+    {
+      "page_id": "global-leadership",
+      "url": "https://www.nice.com/company/global-leadership",
+      "page_title": "Global Leadership | NiCE",
+      "status": "reviewed_no_issue_found",
+      "findings_count": 0
+    },
+    {
+      "page_id": "media-center",
+      "url": "https://www.nice.com/company/media-center",
+      "page_title": "NiCE media center | NiCE",
+      "status": "reviewed_no_issue_found",
+      "findings_count": 0
+    },
+    {
+      "page_id": "press-releases",
+      "url": "https://www.nice.com/press-releases",
+      "page_title": "Press Releases | NiCE",
+      "status": "reviewed_with_findings",
+      "findings_count": 1
+    },
+    {
+      "page_id": "investors",
+      "url": "https://www.nice.com/company/investors",
+      "page_title": "NiCE: Investor Relations",
+      "status": "reviewed_no_issue_found",
+      "findings_count": 0
+    },
+    {
+      "page_id": "about-us",
+      "url": "https://www.nice.com/company/about-us",
+      "page_title": "About NiCE",
+      "status": "reviewed_no_issue_found",
+      "findings_count": 0
+    },
+    {
+      "page_id": "resources",
+      "url": "https://www.nice.com/resources",
+      "page_title": "Call Center Resource Finder | NiCE",
+      "status": "reviewed_with_findings",
+      "findings_count": 1
+    },
+    {
+      "page_id": "blog",
+      "url": "https://www.nice.com/blog",
+      "page_title": "Customer Experience Blog | NiCE",
+      "status": "reviewed_no_issue_found",
+      "findings_count": 0
+    },
+    {
+      "page_id": "trust-center",
+      "url": "https://www.nice.com/company/trust-center",
+      "page_title": "NiCE Trust Center | NiCE",
+      "status": "reviewed_no_issue_found",
+      "findings_count": 0
+    },
+    {
+      "page_id": "integrations",
+      "url": "https://www.nice.com/platform/integrations",
+      "page_title": "AI Platform Integrations for Customer Experience | NiCE",
+      "status": "reviewed_with_findings",
+      "findings_count": 1
+    },
+    {
+      "page_id": "omnichannel-routing",
+      "url": "https://www.nice.com/products/omnichannel-routing",
+      "page_title": "AI Omnichannel Routing | NiCE",
+      "status": "reviewed_with_findings",
+      "findings_count": 1
+    },
+    {
+      "page_id": "products",
+      "url": "https://www.nice.com/products",
+      "page_title": "AI Customer Experience Solutions | NiCE",
+      "status": "reviewed_no_issue_found",
+      "findings_count": 0
+    },
+    {
+      "page_id": "nice-world",
+      "url": "https://www.nice.com/websites/nice-world",
+      "page_title": "NiCE World 2026 | CX & AI Conference in Orlando, FL",
+      "status": "reviewed_with_findings",
+      "findings_count": 2
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "home-cq-001-investors-relations-nav",
+      "prior_issue_id": "home-cq-001-investor-relations-nav-copy",
+      "url": "https://www.nice.com",
+      "page_id": "home",
+      "rule_id": "CQ-001",
+      "category": "content",
+      "severity": "medium",
+      "evidence_state": "confirmed_issue",
+      "comparison_status": "recurring_issue",
+      "title": "Shared navigation label says \"Investors relations\"",
+      "summary": "The shared Company navigation label still reads \"Investors Investors relations, reports and filings,\" which contains a grammar/copy error in a repeated sitewide navigation element.",
+      "affected_element": "Company mega-menu > Investors link",
+      "recommended_action": "Update the shared label to \"Investor Relations\" and verify the correction anywhere the Company navigation module appears.",
+      "confidence": "high",
+      "evidence_reference": "Home page text capture lines 227-231"
+    },
+    {
+      "issue_id": "contact-us-cl-002-primary-form-not-observable",
+      "prior_issue_id": "contact-us-cl-002-primary-form-not-observable",
+      "url": "https://www.nice.com/contact-us",
+      "page_id": "contact-us",
+      "rule_id": "CL-002",
+      "category": "cta_link",
+      "severity": "high",
+      "evidence_state": "needs_human_verification",
+      "comparison_status": "recurring_issue",
+      "title": "Primary contact form is still not observable in accessible text capture",
+      "summary": "The page asks visitors to \"Tell us a bit about your goals,\" but the current capture still does not expose any form fields, field labels, or submit control, so the primary conversion form may be hidden, embedded without accessible text, or failing to load in this review mode.",
+      "affected_element": "Primary lead capture form",
+      "recommended_action": "Run a full browser verification to confirm that the form renders reliably, exposes labeled inputs and a submit action, and remains usable for keyboard and assistive-technology users.",
+      "confidence": "low",
+      "evidence_reference": "Contact page text capture lines 274-299"
+    },
+    {
+      "issue_id": "press-releases-cq-001-trailing-view-text",
+      "prior_issue_id": "qa-2026-05-13-press-release-view-suffix",
+      "url": "https://www.nice.com/press-releases",
+      "page_id": "press-releases",
+      "rule_id": "CQ-001",
+      "category": "content",
+      "severity": "medium",
+      "evidence_state": "confirmed_issue",
+      "comparison_status": "recurring_issue",
+      "title": "Press release cards still append stray \"view\" text",
+      "summary": "Multiple press release links still end with an extra trailing word, such as \"...Agentic Automation view,\" which makes the listing headlines read like broken card copy.",
+      "affected_element": "Press release listing card titles",
+      "recommended_action": "Separate the card CTA label from the headline text or remove the stray trailing \"view\" string from the listing template.",
+      "confidence": "high",
+      "evidence_reference": "Press releases page text capture lines 293-313"
+    },
+    {
+      "issue_id": "resources-cl-003-generic-see-more-cta",
+      "prior_issue_id": "resources-cl-003-generic-see-more-cta",
+      "url": "https://www.nice.com/resources",
+      "page_id": "resources",
+      "rule_id": "CL-003",
+      "category": "cta_link",
+      "severity": "medium",
+      "evidence_state": "likely_issue",
+      "comparison_status": "recurring_issue",
+      "title": "Featured resource cards still rely on generic \"See more\" CTAs",
+      "summary": "Multiple promoted resources continue to use the same vague CTA label, \"See more,\" which weakens scanability and makes the destination type unclear before click-through.",
+      "affected_element": "Featured resource card CTAs",
+      "recommended_action": "Replace the repeated CTA with destination-specific labels such as \"Read the report,\" \"Open guide,\" or \"Watch the webinar.\"",
+      "confidence": "high",
+      "evidence_reference": "Resources page text capture lines 287-312"
+    },
+    {
+      "issue_id": "integrations-cq-001-security-share-data",
+      "prior_issue_id": "integrations-cq-001-security-share-data",
+      "url": "https://www.nice.com/platform/integrations",
+      "page_id": "integrations",
+      "rule_id": "CQ-001",
+      "category": "content",
+      "severity": "medium",
+      "evidence_state": "confirmed_issue",
+      "comparison_status": "recurring_issue",
+      "title": "Section heading still reads as a grammatical error",
+      "summary": "The integrations page still includes the heading \"Security share data,\" which reads as a broken phrase and does not match the surrounding clear, benefit-led headings.",
+      "affected_element": "Data section heading",
+      "recommended_action": "Replace the heading with the intended phrasing, such as \"Securely share data,\" and verify the corrected section title in the live layout.",
+      "confidence": "high",
+      "evidence_reference": "Integrations page text capture lines 313-321"
+    },
+    {
+      "issue_id": "omnichannel-routing-cq-001-preferrable",
+      "prior_issue_id": "omnichannel-routing-cq-001-preferrable",
+      "url": "https://www.nice.com/products/omnichannel-routing",
+      "page_id": "omnichannel-routing",
+      "rule_id": "CQ-001",
+      "category": "content",
+      "severity": "medium",
+      "evidence_state": "confirmed_issue",
+      "comparison_status": "recurring_issue",
+      "title": "Hero copy still misspells \"preferable\" as \"preferrable\"",
+      "summary": "The product hero still reads \"Personal, preferrable, AI-powered connections,\" leaving a spelling error in a prominent conversion area.",
+      "affected_element": "Hero subheadline",
+      "recommended_action": "Correct the word to \"preferable\" and recheck the hero copy on desktop and mobile.",
+      "confidence": "high",
+      "evidence_reference": "Omnichannel Routing page text capture lines 274-279"
+    },
+    {
+      "issue_id": "nice-world-vq-003-duplicate-time-labels",
+      "prior_issue_id": "nice-world-vq-003-duplicate-time-labels",
+      "url": "https://www.nice.com/websites/nice-world",
+      "page_id": "nice-world",
+      "rule_id": "VQ-003",
+      "category": "visual",
+      "severity": "high",
+      "evidence_state": "likely_issue",
+      "comparison_status": "recurring_issue",
+      "title": "Agenda section still repeats stray time labels",
+      "summary": "The agenda timeline repeatedly inserts the standalone string \"9:00 am – 10:15 am\" before multiple session cards, which makes the schedule harder to scan and suggests duplicated label output in the card pattern.",
+      "affected_element": "Agenda timeline / session cards",
+      "recommended_action": "Remove the repeated standalone time labels and confirm each agenda card renders only its own session time once.",
+      "confidence": "medium",
+      "evidence_reference": "NiCE World page text capture lines 318-347 and 361-417"
+    },
+    {
+      "issue_id": "nice-world-ax-001-unlabeled-sponsor-links",
+      "prior_issue_id": "qa-2026-05-13-nice-world-unlabeled-sponsor-links",
+      "url": "https://www.nice.com/websites/nice-world",
+      "page_id": "nice-world",
+      "rule_id": "AX-001",
+      "category": "accessibility",
+      "severity": "medium",
+      "evidence_state": "likely_issue",
+      "comparison_status": "recurring_issue",
+      "title": "Sponsor logo links still appear without readable link labels",
+      "summary": "In the sponsor section, multiple outbound links still render as blank linked elements in the page capture instead of readable sponsor names, suggesting logo-only links without dependable accessible text.",
+      "affected_element": "Sponsor logo links",
+      "recommended_action": "Give each sponsor logo link a readable accessible name through visible text, alt text, or aria-label and verify the result with linearized navigation.",
+      "confidence": "medium",
+      "evidence_reference": "NiCE World page text capture lines 530-552"
+    }
+  ],
+  "suppressed_findings": [],
+  "resolved_findings": [],
+  "run_warnings": [
+    "The live repository still does not expose the expected operational config, rules, guidance, feedback, or template files. This run used /workspace/agent_files/repo-starter as a fallback for URL inventory, QA rules, severity guidance, brand guidance, accessibility guidance, CTA guidance, performance guidance, and summary templates.",
+    "Live prior report history was available and used for comparison, but no live approved-fixes, rejected-findings, reviewer-overrides, or known-false-positive control files were present in the repository during this run.",
+    "Prior repository history is inconsistent across the 2026-05-13 artifacts, so recurring classification was favored over regression claims unless the repository contained an explicit resolved state.",
+    "Coverage was partial for visual, interaction, accessibility, and performance review. Inspection was limited to current page text/html capture without screenshot validation, click-through traversal, form submission, or assistive-technology testing."
+  ],
+  "write_status": "pending_repository_write",
+  "slack_delivery_status": "pending_send_after_repository_write"
+}
